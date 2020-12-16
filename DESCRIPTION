@@ -3,7 +3,7 @@ Type: Package
 Title: Get feedback about the quality of your merges.
 Version: 0.1.1
 Author: Chris Newton
-Maintainer: Chris Newton
+Maintainer: Chris Newton <yourself@somewhere.net>
 Description: This package builds of the `merge()` function from base
   R. It takes the same inputs with an additional input `show.stats`
   (default = `TRUE`). It returns a merged dataframe with an
