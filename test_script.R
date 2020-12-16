@@ -1,5 +1,5 @@
 devtools::install_github("newton-c/merge_stats_R")
-library(merge_stats)
+library(merge.stats)
 
 
 dat.1 <- read.csv("~/Desktop/code_translations_r_package/ucdp-dyadic-201.csv")
