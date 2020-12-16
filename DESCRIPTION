@@ -1,4 +1,4 @@
-Package: merge_stats
+Package: merge.stats
 Type: Package
 Title: Get feedback about the quality of your merges.
 Version: 0.1.1
