@@ -1,4 +1,4 @@
-# merge_stats
+# merge.stats
 
 *Note, this is in development and may have a lot of bugs*
 
@@ -25,7 +25,7 @@ devtools::install_github('newton-c/merge_stats_R')
 ```
 To use, type:
 ```
-library(merge_stats)
+library(merge.stats)
 
 merge_stats(x, y, by = c('var1', 'var2'), ...)
 ```
