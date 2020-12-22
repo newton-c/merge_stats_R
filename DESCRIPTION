@@ -1,7 +1,7 @@
 Package: merge.stats
 Type: Package
 Title: Get feedback about the quality of your merges.
-Version: 0.1.2
+Version: 0.2.0
 Author: Chris Newton
 Maintainer: Chris Newton <yourself@somewhere.net>
 Description: This package builds of the `merge()` function from base
