@@ -97,7 +97,11 @@ join_stats <- function(x, y, by = NULL, copy = FALSE,
                     merging.all <- sum(m_df$merge == 3, na.rm = TRUE)
                     sm6 <- paste("Total merged:",
                                  merging.all, sep = " ")
+                    total.obvs <- nrow(m_df)
+                    sm7 <- paste("Total observations:",
+                                 total.obvs, sep = " ")
                     cat(paste("Merging stats:", sm1, sm2, sm3, sm4, sm5, sm6,
+                              sm7,
                               "", sep = "\n"))
        }
    cat(paste("",

@@ -70,7 +70,11 @@ merge_stats <- function(x, y, by = intersect(names(x), names(y)), by.x = FALSE,
                         merging.all <- sum(m.df$merge == 3, na.rm = TRUE)
                         sm6 <- paste("Total merged:",
                                      merging.all, sep = " ")
+                        total.obvs <- nrow(m.df)
+                        sm7 <- paste("Total observations:",
+                                     total.obvs, sep = " ")
                         cat(paste("Merging stats:", sm1, sm2, sm3, sm4, sm5, sm6,
+                                  sm7,
                                   "", sep = "\n"))
            }
        cat(paste("",
