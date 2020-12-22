@@ -7,7 +7,9 @@
 - Add warning messages so user know why something isn't working.
 
 This package builds of the `merge()` function from base
-R and the joins from `dplyr` (for example `inner_join()`). The function `merge_stats()`
+R and the joins from `dplyr` (for example `inner_join()`).
+
+The function `merge_stats()`
 takes the same inputs as `merge()` with an additional input `show.stats`
 (default = `TRUE`). It returns a merged dataframe with an
 additional variable `merge` which that imitates the `_merge`
@@ -16,8 +18,9 @@ merging, 2 for only the second dataframe merging, 3 if there's a
 perfect merge, and NA if there's an error. If `show.stats = TRUE`
 summaries of the merge are printed to screen.
 
-The function `join_stats` does the same, but with an additional arguement `join = ` which specifies the type of join. Options are the
-join currently availible for dplyr ("inner", "right", "left", "full", "semi", and "anti").
+The function `join_stats()` does the same, but with an additional arguement `join = ` which specifies the type of join. Options are the
+joins currently availible for dplyr ("inner", "right", "left", "full", "semi", and "anti"). To keep the inputs consistent with the
+packages they're build upon, `join_stats()` takes the input `show_stats = ` instead of `show.stats = `.
 
 ## Usage:
 This package can be installed using `devtools`. with the following lines of
@@ -31,6 +34,6 @@ To use, type:
 ```
 library(merge.stats)
 
-merge_stats(x, y, by = c('var1', 'var2'), ...)
-merge_join(x, y, by = c('var1', 'var2'), join = "inner" ...)
+merge_stats(x, y, by = c('var1', 'var2'), show.stats = TRUE ...)
+join_stats(x, y, by = c('var1', 'var2'), join = "inner", show_stats = FALSE ...)
 ```
