@@ -1,7 +1,7 @@
 # merge function to generate stats about how good your merge was
 
-merge_stats <- function(x, y, by = intersect(names(x), names(y)), by.x = FALSE,
-    by.y = FALSE, all = FALSE, all.x = FALSE, all.y = FALSE, sort = TRUE,
+merge_stats <- function(x, y, by = intersect(names(x), names(y)), by.x = by,
+    by.y = by, all = FALSE, all.x = all, all.y = all, sort = TRUE,
     suffixes = c(".x", ".y"), no.dups = TRUE, incomparables = NULL,
     show.stats = TRUE, ...) {
         x.name <- deparse(substitute(x))
@@ -31,7 +31,7 @@ merge_stats <- function(x, y, by = intersect(names(x), names(y)), by.x = FALSE,
         } else {
             x$merge <- 1
             y$merge <- 1
-            m.df <- merge(x, y, by = intersect(names(x), names(y)), by.x = by.x,
+            m.df <- merge(x, y, by = by, by.x = by.x,
                   by.y = by.y, all = FALSE, all.x = all.x, all.y = all.y, sort = TRUE,
                   suffixes = c(".x", ".y"), no.dups = TRUE,
                   incomparables = NULL, ...)
